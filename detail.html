@@ -21,7 +21,7 @@
   <!-- 
     - theme js
   -->
-  <script src="./assets/js/theme.js"></script>
+  <script src="./js/theme.js"></script>
 
   <!-- 
     - google font
@@ -40,13 +40,13 @@
   <!-- 
     - custom css
   -->
-  <link rel="stylesheet" href="./assets/css/style.css">
+  <link rel="stylesheet" href="./css/style.css">
 
   <!-- 
     - custom js
   -->
-  <script src="./assets/js/global.js" type="module"></script>
-  <script src="./assets/js/detail.js" type="module"></script>
+  <script src="./js/global.js" type="module"></script>
+  <script src="./js/detail.js" type="module"></script>
 
 </head>
 
@@ -55,12 +55,11 @@
   <!-- 
     - #HEADER
   -->
-
   <header class="header" data-header>
 
     <a href="/" class="logo">
-      <img src="./assets/images/logo-light.svg" width="156" height="32" alt="Cook.io" class="logo-light">
-      <img src="./assets/images/logo-dark.svg" width="156" height="32" alt="Cook.io" class="logo-dark">
+      <img src="./images/logo-light.svg" width="156" height="32" alt="Cook.io" class="logo-light">
+      <img src="./images/logo-dark.svg" width="156" height="32" alt="Cook.io" class="logo-dark">
     </a>
 
     <nav class="navbar">
@@ -91,6 +90,45 @@
     </a>
 
   </header>
+
+  <!-- 
+    - #MOBILE NAV
+  -->
+  <nav class="mobile-nav" aria-label="primary">
+    <ul class="nav-list">
+
+      <li class="nav-item">
+        <a href="./recipes.html" class="nav-link">
+          <span class="item-icon">
+            <span class="material-symbols-outlined" aria-hidden="true">lunch_dining</span>
+          </span>
+
+          <span class="label-medium">Recipes</span>
+        </a>
+      </li>
+
+      <li class="nav-item">
+        <a href="/" class="nav-link">
+          <span class="item-icon">
+            <span class="material-symbols-outlined" aria-hidden="true">home</span>
+          </span>
+
+          <span class="label-medium">Home</span>
+        </a>
+      </li>
+
+      <li class="nav-item">
+        <a href="./saved-recipes.html" class="nav-link">
+          <span class="item-icon">
+            <span class="material-symbols-outlined" aria-hidden="true">book</span>
+          </span>
+
+          <span class="label-medium">Saved</span>
+        </a>
+      </li>
+
+    </ul>
+  </nav>
 
   <main class="detail-page-main">
     <article class="article container detail-page" data-detail-container>
@@ -150,19 +188,18 @@
   <!-- 
     - #FOOTER
   -->
-
   <footer class="footer">
 
     <p class="copyright body-medium">This project make for presentation Only</p>
 
     <a href="/" class="logo">
-      <img src="./assets/images/logo-light.svg" width="156" height="32" alt="Cook.io" class="logo-light">
+      <img src="./images/logo-light.svg" width="156" height="32" alt="Cook.io" class="logo-light">
 
-      <img src="./assets/images/logo-dark.svg" width="156" height="32" alt="Cook.io" class="logo-dark">
+      <img src="./images/logo-dark.svg" width="156" height="32" alt="Cook.io" class="logo-dark">
     </a>
 
     <a href="https://www.edamam.com/" target="_blank" class="edamam">
-      <img src="./assets/images/edamam.svg" width="200" height="40" loading="lazy" alt="edamam free recipe api">
+      <img src="./images/edamam.svg" width="200" height="40" loading="lazy" alt="edamam free recipe api">
     </a>
 
   </footer>
