@@ -6,6 +6,7 @@ import { fetchData } from "./api.js";
 import { $skeletonCard, cardQueries } from "./global.js";
 import { getTime } from "./module.js";
 
+
 /**
  * Accordion
  */
@@ -26,6 +27,7 @@ const inintAccordion = function ($element) {
 
 for (const $accordion of $accordions) inintAccordion($accordion);
 
+
 /**
  * Filter bar toggle for mobile screen
  */
@@ -40,6 +42,7 @@ addEventOnElement($filterTogglers, "click", function () {
     const bodyOverflow = document.body.style.overflow;
     document.body.style.overflow = bodyOverflow === "hidden" ? "visible" : "hidden";
 });
+
 
 /**
  * Filter submit and clear
@@ -66,6 +69,7 @@ $filterSubmit.addEventListener("click", function () {
 
     window.location = queries.length ? `?${queries.join("&").replace(/,/g, "=")}` : "./recipes.html";
 
+
 });
 
 $filterSearch.addEventListener("keydown", e => {
@@ -80,6 +84,7 @@ $filterClear.addEventListener("click", function () {
     $filterSearch.value &&= "";
 
 });
+
 
 const /** {String} */ queryStr = window.location.search.slice(1);
 const /** {Array} */ queries = queryStr && queryStr.split("&").map(i => i.split("="));
@@ -135,7 +140,7 @@ const renderRecipe = data => {
         } = item
 
         const /** {String} */ recipeId = uri.slice(uri.lastIndexOf("_") + 1);
-        const /** {undefined || String} */ isSaved = window.localStorage.getItem(`cookio-recipe${recipeId}`); 
+        const /** {undefined || String} */ isSaved = window.localStorage.getItem(`FoodLover-recipe${recipeId}`); 
 
         const /** {NodeElement} */ $card = document.createElement("li");
         $card.classList.add("card");
@@ -182,6 +187,7 @@ const renderRecipe = data => {
 
 }
 
+
 let /** {Boolean} */ requestBefore = true;
 
 fetchData(queries || defaultQueries, data => {
@@ -199,6 +205,7 @@ fetchData(queries || defaultQueries, data => {
     }
 
 })
+
 
 const /** {Number} */ CONTAINER_MAX_WIDTH = 1200;
 const /** {Number} */ CONTAINER_MAX_CARD = 6;
@@ -222,5 +229,6 @@ window.addEventListener("scroll", async e => {
     }
     
     if (!nextPageUrl) $loadMore.innerHTML = `<p class="body-medium info-text">No more recipes</p>`;
+    
 
 });

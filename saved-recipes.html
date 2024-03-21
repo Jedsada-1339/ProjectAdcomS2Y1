@@ -6,17 +6,17 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Saved recipes</title>
+
+
+    <title>Saved Recipes</title>
     <meta name="title" content="Food lover -- Find what you want to eat.">
-    <meta name="decription" content="This is a recipe application.">
+    <meta name="decription" content="This is a recipe application made by Jedsada.">
 
     <link rel="shortcut icon" href="./favicon.svg" type="image/svg+xml">
-
     <!--
         theme jsd
     -->
     <script src="./js/theme.js"></script>
-
     <!--
         Google font
     -->
@@ -48,7 +48,7 @@
         Headder
     -->
     <header class="header" data-header>
-        <a href="/" class="logo">
+        <a href="./home.html" class="logo">
             <img src="./images/logo-light.svg" width="156" height="32" alt="Cook.io" class="logo-light">
             <img src="./images/logo-dark.svg" width="156" height="32" alt="Cook.io" class="logo-dark">
         </a>
@@ -56,7 +56,7 @@
             <ul class="navbar-list">
 
                 <li>
-                    <a href="/" class="navbar-link title-small has-state">Home</a>
+                    <a href="./home.html" class="navbar-link title-small has-state">Home</a>
                 </li>
 
                 <li>
@@ -73,10 +73,27 @@
             <span class="material-symbols-outlined dark-icon" aria-hidden="true">dark_mode</span>
 
         </button>
+
+        <a href="./feedback.html">
+            <button class="icon-btn feedback has-state">
+                <span class="material-symbols-outlined light-icon" aria-hidden="true">feedback</span>
+            </button>
+        </a>
+
         <a href="./saved-recipes.html" class="btn btn-primary has-icon">
             <span class="material-symbols-outlined" aria-hidden="true">book</span>
 
             <span class="span">Saved Recipes</span>
+        </a>
+
+        <a href="./login.html" class="btnLogin-popup">
+                <span class="material-symbols-outlined" aria-hidden="true">login</span>
+                <span class="span">login</span>
+        </a>
+
+        <a href="./login.html" class="btnLogout-popup">
+            <span class="material-symbols-outlined" aria-hidden="true">logout</span>
+            <span class="span">logout</span>
         </a>
 
     </header>
@@ -98,7 +115,7 @@
             </li>
 
             <li class="nav-item">
-                <a href="/" class="nav-link">
+                <a href="./home.html" class="nav-link">
                     <span class="item-icon">
                         <span class="material-symbols-outlined" aria-hidden="true">home</span>
                     </span>
@@ -117,12 +134,15 @@
                 </a>
             </li>
 
+
         </ul>
     </nav>
 
     <main>
         <article class="article container saved-recipe-page" data-saved-recipe-container></article>
     </main>
+
+
 
     <!--
         Footer

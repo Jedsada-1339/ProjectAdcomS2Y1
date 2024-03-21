@@ -41,7 +41,7 @@ fetchData(null, data => {
   let /** String */ ingredientItems = "";
 
   const /** {String} */ recipeId = uri.slice(uri.lastIndexOf("_") + 1);
-  const /** {undefined || String} */ isSaved = window.localStorage.getItem(`cookio-recipe${recipeId}`);
+  const /** {undefined || String} */ isSaved = window.localStorage.getItem(`FoodLover-recipe${recipeId}`);
 
   tags.map(tag => {
 

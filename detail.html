@@ -10,8 +10,8 @@
     - primary meta tags
   -->
   <title>Food lover</title>
-    <meta name="title" content="Food lover -- Find what you want to eat.">
-    <meta name="decription" content="This is a recipe application">
+  <meta name="title" content="Food lover -- Find what you want to eat.">
+  <meta name="decription" content="This is a recipe application made by Jedsada.">
 
   <!-- 
     - favicon
@@ -55,9 +55,10 @@
   <!-- 
     - #HEADER
   -->
+
   <header class="header" data-header>
 
-    <a href="/" class="logo">
+    <a href="./home.html" class="logo">
       <img src="./images/logo-light.svg" width="156" height="32" alt="Cook.io" class="logo-light">
       <img src="./images/logo-dark.svg" width="156" height="32" alt="Cook.io" class="logo-dark">
     </a>
@@ -66,7 +67,7 @@
       <ul class="navbar-list">
 
         <li>
-          <a href="/" class="navbar-link title-small has-state">Home</a>
+          <a href="./home.html" class="navbar-link title-small has-state">Home</a>
         </li>
 
         <li>
@@ -83,17 +84,38 @@
       <span class="material-symbols-outlined dark-icon" aria-hidden="true">dark_mode</span>
     </button>
 
+    <a href="./feedback.html">
+      <button class="icon-btn feedback has-state">
+          <span class="material-symbols-outlined light-icon" aria-hidden="true">feedback</span>
+      </button>
+    </a>
+
     <a href="./saved-recipes.html" class="btn btn-primary has-icon">
       <span class="material-symbols-outlined" aria-hidden="true">book</span>
 
       <span class="span">Saved Recipes</span>
     </a>
 
+    <a href="./login.html" class="btnLogin-popup">
+            <span class="material-symbols-outlined" aria-hidden="true">login</span>
+            <span class="span">login</span>
+    </a>
+
+    <a href="./login.html" class="btnLogout-popup">
+        <span class="material-symbols-outlined" aria-hidden="true">logout</span>
+        <span class="span">logout</span>
+    </a>
+
   </header>
+
+
+
+
 
   <!-- 
     - #MOBILE NAV
   -->
+
   <nav class="mobile-nav" aria-label="primary">
     <ul class="nav-list">
 
@@ -108,7 +130,7 @@
       </li>
 
       <li class="nav-item">
-        <a href="/" class="nav-link">
+        <a href="./home.html" class="nav-link">
           <span class="item-icon">
             <span class="material-symbols-outlined" aria-hidden="true">home</span>
           </span>
@@ -129,6 +151,10 @@
 
     </ul>
   </nav>
+
+
+
+
 
   <main class="detail-page-main">
     <article class="article container detail-page" data-detail-container>
@@ -185,9 +211,14 @@
     </article>
   </main>
 
+
+
+
+
   <!-- 
     - #FOOTER
   -->
+
   <footer class="footer">
 
     <p class="copyright body-medium">This project make for presentation Only</p>

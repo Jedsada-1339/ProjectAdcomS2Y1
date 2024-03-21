@@ -1,7 +1,6 @@
 /**
  * Import
  */
-
 import { fetchData } from "./api.js";
 import { $skeletonCard, cardQueries } from "./global.js";
 import { getTime } from "./module.js";
@@ -110,7 +109,7 @@ const addTabContent = ($currentTabBtn, $currentTabPanel) => {
             }= data.hits[i]
 
             const /** {String} */ recipeId = uri.slice(uri.lastIndexOf("_") + 1);
-            const /** {undefined || String} */ isSaved = window.localStorage.getItem(`cookio-recipe${recipeId}`); 
+            const /** {undefined || String} */ isSaved = window.localStorage.getItem(`FoodLover-recipe${recipeId}`); 
 
             const /** {NodeElment} */ $card = document.createElement("div");
             $card.classList.add("card");
@@ -210,7 +209,7 @@ for (const [index, $sliderSection] of $sliderSections.entries()) {
             } = item;
 
             const /** {String} */ recipeId = uri.slice(uri.lastIndexOf("_") + 1);
-            const /** {undefined || String} */ isSaved = window.localStorage.getItem(`cookio-recipe${recipeId}`); 
+            const /** {undefined || String} */ isSaved = window.localStorage.getItem(`FoodLover-recipe${recipeId}`); 
 
             const /** {NodeElement} */ $sliderItem = document.createElement("li");
             $sliderItem.classList.add("slider-item");
